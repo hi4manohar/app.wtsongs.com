@@ -1,0 +1,933 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "Segoe UI",Arial,sans-serif !important;
+	background-color: #fff;
+}
+/* @Common Styles */
+.dotes {
+    text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    color:white;
+}
+/* @Common Styles End */
+.fa-remove:before,.fa-close:before,.fa-times:before{content:"\00f" !important}
+
+.header{
+	width: 100%;
+	height: 70px;
+	background-color: #0033ff;
+	position: fixed;
+	top:0;
+	z-index: 1;
+}
+
+.fa_size{
+	font-size: 200%!important;
+	color: #fff!important;
+	margin: 0px 0px;
+	padding: 20px 22px 18px 17px;
+	float: left;
+	cursor: pointer;
+}
+.fa_size:hover {
+	background-color: #052ed1;
+}
+/*================= logo css start ============ */
+.logo{
+	width:150px;
+	height: 30px;
+	background-color: ;
+	float: left;
+	margin: 20px 0px;
+}
+.logo_text {
+	color:#fff;
+	font-size: 22px;
+	padding-left: 20px;
+	margin-top: -1px;
+}
+/*============ drs search box css start =============*/
+.drs_search {
+	width: 50%;
+	height: 32px;
+	float: left;
+	margin: 20px 0px 0px 20px;
+	margin-left: 74px;
+	position: absolute;
+}
+#drs_s_box {
+	width: 100%;
+	height: 32px;
+}
+#drs_s_box input[type=text] {
+	width: 90%;
+	height: 30px;
+	float: left;
+	border: none;
+}
+#drs_s_box input[placeholder] {
+	color: #000;
+	font-size: 16px;
+	padding-left: 20px;
+	border-radius: 50px;
+}
+/* ============ menu css ============*/
+.menu{
+	width:200px;
+	height: 1000px;
+	min-height: 200px;
+	position: fixed;
+	background-color:#fff;
+	box-shadow: 2px 6px 20px #888888;
+	z-index: 1;
+	overflow: auto;
+	margin-top:0px;
+	top: 70px;
+	left: 0;
+}
+.menu ul{
+	list-style-type: none;
+}
+.menu li{}
+.menu li a{
+	color: #000;
+	padding:10px 25px;
+	display: block;
+	text-decoration: none; 
+}
+.menu li a:hover{
+	background-color: #efefef;
+}
+.icon{
+	width: 15px;
+	height: 15px;
+	float: left;
+	margin: 4px 10px 0px 0px;
+}
+.none{
+	display: none;
+}
+.block{
+	display: block;
+}
+.menu li a p{
+	padding-left: 25px;
+	font-size: 13px;
+	color: #000;
+	display: none;
+}
+/* =============== search box icon =========*/
+.search_box_icon{
+    border: #000 0px solid;
+    float: right;
+    padding: 25px 19px 24px 20px;
+    display: block;
+    cursor: pointer;
+}
+.search_box_icon:hover {
+	background-color: #052ed1;
+}
+.fa-search-box {
+	color:#fff;
+    font-size: 150% !important;
+    cursor: pointer;
+
+}
+/* ============== content_wrapper =============*/
+.content_wrapper{
+	width: 100%;
+	height:auto;
+	margin: 80px auto 0px;
+}
+.drs_btn {
+	background-color: #CA2020;
+	border: none;
+	cursor: pointer;
+}
+.drs_btn:hover {
+	background-color: #E70A0A;
+}
+.home_sell_btn{
+	width: 50%;
+	max-width: 400px;
+	height: 40px;
+	background-color: #CA2020;
+	margin:40px 25%;
+	color: #fff;
+	font-size: 100%;
+}
+
+.home_login_btn {
+	margin: 5px 25%;
+}
+.f-g-signup{
+	width:60%;
+	max-width: 600px;
+	height: 80px;
+	background-color: #f00;
+	margin:10px 20% 60px;
+}
+/* ================== footer wrapper ============ */
+.footer_wrapper{
+	width: 100%;
+	height: 50px;
+	background-color: #0033ff;
+}
+.footer_wrapper p{
+	text-align: center;
+	padding-top:10px;
+	color: #fff;
+	font-size: 20px;
+}
+/* ============login form page css start ==========*/
+/* ===== header menu start css=========*/
+.inner_containner{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.h_menu{
+	width: 100%;
+	height: 34px;
+	margin-top: 70px;
+}
+.h_nav_button{
+	width: 50%;
+	border: none;
+	color: #fff;
+	float: left;
+	background-color: #6666ff;
+	padding-top: 9px;
+	padding-bottom: 10px;
+}
+.h_nav_button:hover{
+	background-color: #ff7700;
+	cursor: pointer;
+}
+.category_containner{
+	width: 100%;
+	height: auto;
+	padding: 5px 1px;
+	overflow: hidden;
+}
+.category_icon_containner{
+	margin: 0 auto;
+	max-width: 285px;
+}
+.category_icon{
+	background-color: #fff;
+	width: 80px;
+	height: 80px;
+	margin:5px 7px;
+	cursor: pointer;
+	box-shadow: 1px 3px 12px #BFBFBF;
+}
+.category_icon:hover{
+	border-radius: 5px;
+}
+.fl_l{
+	float: left;
+}
+.icon_img{
+	width: 46px;
+	height: 30px;
+	margin: 10px 20px 5px 20px;
+}
+.icon_title{
+	font-family: "Segoe UI",Arial,sans-serif !important;
+	font-size: 11px;
+	color: #000;
+	text-align: center;
+	padding: 0px;
+}
+/* ===== header menu end css=========*/
+.login_form{
+	width: 100%;
+	height:auto;
+	margin: 0px auto 0px;
+	background-color: #fff;
+}
+.login_header h1{
+	color: #222;
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+	
+}
+.email{
+	width: 90%;
+	margin:0px auto;
+	border-bottom: 1px solid #BE3535;
+}
+.email input[type="text"]{
+	border: none;
+	width: 95%;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 5%;
+}
+.password{
+	width: 90%;
+	margin:0px auto;
+	border-bottom: 1px solid #BE3535;
+}
+.password input[type="password"]{
+	border: none;
+	width: 95%;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 5%;
+}
+.submit{
+	width: 90% !important;
+	margin:30px auto;
+	background-color: #ff7700 !important;
+	max-width: 425px;
+}
+.submit input[type="submit"]{
+	border: none;
+	width: 100%;
+	height: 40px;
+	background: none;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+}
+.f_password_cont{
+	width: 90%;
+	margin:30px auto 10px;
+	height: 40px;
+	max-width: 425px;
+}
+.f_password{
+	float:left;
+}
+.register{
+	float:right;
+}
+.drs_f_r {
+	width:45%;
+	height: 40px;
+	background-color: #f00;
+	border: none;
+	color:#fff;
+	font-size: 13px;
+	cursor: pointer;
+}
+.drs_f_r:hover {
+	background-color: #5F3838;
+}
+.login_with{
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+	max-width: 350px;
+}
+.login_with_fb{
+	width: 100%;
+	margin:0px auto 20px;
+	background-color: #E70A0A;
+	height: 40px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	max-width: 400px;
+}
+.login_with_g{
+	width: 100%;
+	margin:0px auto 80px;
+	height: 40px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+.signup{
+	width: 90%;
+	margin:0px auto;
+}
+.signup input[type="text"]{
+	width: 95%;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 2%;
+}
+.signup input[type="password"] {
+	width: 95%;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 2%;
+}
+.signup select{
+	width: 98%;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 0%;
+	color: #BBB;
+}
+/* ============signup form page css start ==========*/
+/* ============signup form page css end ==========*/
+
+/* ============browse books page css start ==========*/
+.filter{
+	width: 90%;
+	height: 40px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding-top: 10px;
+}
+.select_f{
+	width: 45%;
+	height: 30px;
+	float: left;
+}
+.select_b{
+	width:45%;
+	height: 30px;
+	float: left;
+	margin-left: 10%;
+}
+.first_add{
+	width: 97%;
+	height: 120px;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-bottom: 10px;
+	box-shadow: 2px 6px 20px #888888;
+}
+.first_add_img{
+	width: 100px;
+	height:100px;
+	min-width: 100px;
+	float: left;
+	border:3px solid #000;
+	margin: 7px 0px 7px 7px;
+}
+
+.first_add_img img{
+	width:100px;
+	height: 100px;
+}
+.first_add_details{
+	width: 56%;
+	height: 120px;
+	float: left;
+	margin-left: 5px;
+}
+.drs_book_details{
+	width: 100%;
+}
+.book_title{
+	height: 30px;
+	margin-top: 2px;
+}
+.book_title h2{
+	font-size: 14px;
+	color: #461DC2;
+	padding: 5px;
+	text-transform: capitalize;
+	font-weight: 500;
+}
+.book_price{
+	height: 30px;
+	margin-top: 6px;
+}
+.m_price{
+	width:73px;
+	background-color: #00f;
+	height: 26px;
+	float: left;
+	padding-top: 2px;
+}
+.drs_price{
+	width: 73px;
+	background-color: #ff7700;
+	height: 26px;
+	float: left;
+	padding-top: 2px;
+	margin-left: 2px;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.m_price a{
+	margin-left: 3px;
+	font-size: 11px;
+	font-weight: bold;
+}
+.drs_price a{
+	margin-left: 3px;
+	font-size: 11px;
+	font-weight: bold;
+}
+.book_location{
+	height: 25px;
+}
+.loc_text{
+	padding: 5px;
+	color: #000;
+	text-transform: capitalize;
+	font-size: 12px;
+}
+.book_holder{
+	height: 20px;
+}
+.ad_owner{
+	text-transform: capitalize;
+	color: #000;
+	padding: 5px;
+	font-size: 12px;
+}
+
+/* ============browse books page css end ==========*/
+
+/* =========== add details page css start ==========*/
+.add_image_cont {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	border: 1px solid #000;
+	background-color: #325A32;
+}
+.add_image {
+	width: 230px;
+	height: 230px;
+	margin: 0 auto 10px;
+}
+.add_image img{
+	width: 180px;
+	height: 180px;
+	margin: 10px;
+	padding: 10px;
+	border:inset 10px #00f;
+}
+/*.drs_ad_b_d{
+	width: 98%;
+	height: auto;
+	background-color: #fff;
+	margin: 0 auto;
+	min-width: 270px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.ad_book_d{
+	width: 100%;
+	height: auto;
+	box-shadow: 0px 0px 10px ;
+	margin-top: 10px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}*/
+.ad_book_name{
+	color: black;
+    font-size: 15px;
+    text-align: center;
+}
+/*
+.ad_book_n{
+	width: 100%;
+	max-height: 40px;
+	height: 20px;
+	font-size: 14px;
+	color: #000;
+	padding: 10px 0px;
+	padding-left: 10px;
+	overflow: hidden;
+}
+.ad_book_mp{
+	width: 100%;
+	height: 40px;
+	font-size: 14px;
+	
+}
+.mp_t{
+	float: left;
+	color: #000;
+	text-align: center;
+	font-weight: 700;
+	padding: 8px 0px 8px 20px;
+	font-size: 18px;
+}
+.p_t{
+	padding: 8px 20px 8px 0px;
+	font-size: 18px;
+	float: right;
+	color: #000;
+	text-align: center;
+	font-weight: 700;
+}
+.ad_book_drsp{
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+}
+.discri_para{
+	padding-left: 10px;
+	padding-bottom: 5px;
+	font-size: 13px;
+}
+.owner_name, .owner_c_no, .owner_email {
+	margin-bottom: 2px;
+	font-size: 13px;
+}
+.owner_name{
+	padding-left: 10px;
+	
+}
+.owner_c_no{
+	padding-left: 10px;
+}
+.owner_email{
+	padding-left: 10px;
+}*/
+.view, .ad_id {
+	font-size: 13px;
+}
+.views{
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-bottom: 20px;
+	min-width: 270px;
+}
+.view{
+	float: left;
+	padding: 10px;
+	font-weight: bold;
+}
+.ad_id{
+	float: right;
+	font-weight: bold;
+	padding: 10px;
+}
+/* =============for sell page css start =========*/
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+.search {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+.search:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-family: 'FontAwesome';
+  content: '\f002';
+  background: #ff7700;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smooth: always;
+  margin-top: 20px;
+}
+
+.searchTerm {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 5px solid #ff7700;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.searchButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.sell_ad_wrapper{
+	width: 100%;
+	height: auto;
+	background-color: #ccc;
+	margin-top: 30px;
+}
+/* =============for sell page css end =========*/
+
+/* =========== my account css start =======*/
+.my_name{
+	margin-bottom: 10px;
+	font-size: 18px;
+	padding: 5px;
+	border: 1px solid #000;
+}
+.my_email{
+	margin-bottom: 10px;
+	font-size: 18px;
+	border: 1px solid #000;
+	padding: 5px;
+}
+.con_no{
+	width: 99.2%;
+	height: 35px;
+	border: 1px solid #000;
+	padding-left: 5px;
+	color: #000;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.s_city{
+	width: 100%;
+	height: 35px;
+	border: 1px solid #000;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.s_countary{
+	width: 100%;
+	height: 35px;
+	border: 1px solid #000;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.s_c_button{
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+}
+.save{
+	float: left;
+	background-color: #66cc00;
+	width: 40%;
+	height: 40px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	min-width: 125px;
+	cursor: pointer;
+}
+.cancel{
+	float: right;
+	background-color: #ff9900;
+	width: 40%;
+	height: 40px;
+	border: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	min-width: 125px;
+	cursor: pointer;
+}
+/* =========== my account css end ================*/
+/* ====================home page css start =================*/
+.free_add_p{
+	width: 100%;
+	height: 40px;
+	background-color: #ff7700;
+	border:none;
+	border-radius:5px;
+	color: #fff;
+	margin:20px 0px;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.free_add_p:hover{
+	background-color: #ff9900;
+}
+
+/* ====================home page css end =================*/
+
+/* ====================ad submit page css start =================*/
+.ad_submit_header{
+	width: 98%;
+	height: 40px;
+	background-color: #ff7700;
+	color: #fff;
+	font-size: 22px;
+	font-weight: inherit;
+	text-align: center;
+	padding-top: 5px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+.s_ad_wrapper{
+	width: 99%;
+	height: 400px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+
+}
+.choose_image{
+	width: 150px;
+	height: 150px;
+	border: 1px #000 dashed;
+	border-radius: 5px;
+	background-color: #ebeaea;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.choose_image_inner{
+	width: 50px;
+	height: 50px;
+	background-color: #00f;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 50px;
+	cursor: pointer;
+	border: 2px solid #fff;
+	opacity: .7;
+}
+.choose_image_inner:hover{
+	opacity: 1;
+}
+div.upload {
+    width: 50px;
+    height: 50px;
+    background-color: #00f;
+    background: url(/assets/img/choose.png)no-repeat;
+    overflow: hidden;
+    background-position: 8px 8px;
+    cursor: pointer;
+
+}
+div.upload input {
+    display: block !important;
+    width: 50px !important;
+    height: 50px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    cursor: pointer;
+
+}
+.seller_d_container{
+	width: 95%;
+	height: auto;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.price_detail{
+	width: 100%;
+	height: auto;
+}
+.price_detail_h{
+	background-color: #ccc;
+	color: #fff;
+	padding: 5px 30px;
+	margin-bottom: 10px;
+}
+.d_p_first{
+	width: 100%;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff; 
+	height: 30px;
+}
+.label_t{
+	width: 40%;
+	height: 30px;
+}
+.label_t p{
+	font-size: 15px;
+	color: #000;
+	font-weight: bold;
+	padding: 05px 0px 0px 10px;
+}
+.input_t{
+	width: 55%;
+	height: 30px;
+}
+.fl_r{
+	float: right;
+}
+.input_t p{
+	font-size: 15px;
+	color: #000;
+	font-weight: bold;
+	padding: 05px 20px 0px 0px;
+}
+hr{
+	width: 95%;
+	margin: 0 auto;
+	background-color: #ccc;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 1px;
+	border: none;
+}
+.f_s{
+	font-size: 13px !important;
+}
+.f_s_p{
+	font-size: 11px !important;
+	padding: 4px 0px 4px 2px !important;
+}
+.wdth{
+	width: 100%;
+}
+.br{
+	border:1px solid #ccc;
+	border-radius: 2px;
+	margin-top: 2px;
+	height: 23px;
+	padding-left: 2px;
+	margin-right: 7px;
+}
+.s_ad_input{
+	margin-top: 20px;
+	margin-bottom: 20px;
+} 
+
+label{
+	color: #000;
+	font-size: 16px;
+	font-weight: inherit;
+	width: 100%;
+	height: 30px;
+	background-color: #00f;
+	padding: 20px 0px;
+}
+.s_ad_title{
+	width: 100%;
+	height: 30px;
+}
+.star{
+	color: red;
+}
+/* ====================ad submit page css end =================*/
+.fix_sell_button{
+	position: fixed;
+	bottom: 20px;
+	right: 15px;
+	width: 50px;
+	height:50px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	background-color: #ff7700;
+	box-shadow: 1px 3px 5px #8E8E8E;
+	cursor: pointer;
+}
+.fix_sell_button p{
+	color: #fff;
+	padding: 15px 0px 0px 12px;
+	font-weight: 700;
+}
+.margin{
+	margin-top: 70px;
+}
